@@ -33,7 +33,8 @@ build/
 .vscode/
 
 ### Sensitive configuration ###
-application-local.properties
 **/application-local.properties
+**/application-pre.properties
+**/application-prod.properties
 *.env
 .env

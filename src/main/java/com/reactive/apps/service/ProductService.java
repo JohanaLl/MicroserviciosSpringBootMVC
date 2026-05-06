@@ -1,19 +1,18 @@
 package com.reactive.apps.service;
 
-import com.reactive.apps.model.Product;
+import com.reactive.apps.dto.ProductDTO;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface ProductService {
 
-    List<Product> findAll();
+    List<ProductDTO> findAll();
 
-    Optional<Product> findById(Long id);
+    ProductDTO findById(Long id);
 
-    Product save(Product product);
+    ProductDTO save(ProductDTO dto);
 
-    Product update(Long id, Product product);
+    ProductDTO update(Long id, ProductDTO dto);
 
     void deleteById(Long id);
 
